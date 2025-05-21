@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #da7c11;
+    cursor: url("../img/icono.png"), auto;
+}
+canvas {
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+#result {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #222;
+}
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e42822;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
