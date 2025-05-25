@@ -70,8 +70,7 @@ function gotResults(err, result)
     let confianza = result[0].confidence * 100;
     confianza = confianza.toFixed(2);
 
-    resulDiv.html(etiqueta + " ")
-
+    resulDiv.html(etiqueta)
     
     if (confianza >= 80) {
         color = 'green';
@@ -82,6 +81,7 @@ function gotResults(err, result)
     }
 
     confDiv.html("<h1 style='color:" + color + "'>Confiable: " + confianza + "%<h1/>")
+    confDiv.style('font-family','Courier New')
     
 
     if (etiqueta !== "") {
@@ -92,6 +92,7 @@ function gotResults(err, result)
 
     img = createImg(rutaImagen, etiqueta);
     img.size(100, 100);
+    img.style('border', '2px solid ' + color);
     figuraDiv.child(img);
     }
 
@@ -103,7 +104,7 @@ function draw()
 {
     if(mouseIsPressed)
     {
-        strokeWeight(4);
+        strokeWeight(8);
         line(mouseX, mouseY, pmouseX, pmouseY)
     }
 }

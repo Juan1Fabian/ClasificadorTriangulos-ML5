@@ -12,14 +12,21 @@ canvas {
     font-size: 20px;
     margin-top: 10px;
     color: #222;
+    font-family: 'Courier New';
 }
 button {
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
+    font-family: 'Courier New';
     background-color: #e42822;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     }
+
+    #figura {
+  text-align: center;
+  margin-top: 20px;
+}
